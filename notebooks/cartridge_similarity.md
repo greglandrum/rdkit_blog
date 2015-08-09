@@ -437,5 +437,88 @@ of 0.4, 0.9, 0.95, and 0.99 took 120ms, 50ms, 30ms, and 20ms (the
 numbers are only reported with a precision of 10ms). As usual, chemfp
 is just stupid fast.
 
+*Update:* Here's equivalent chemfp output for the zinc_clean set
+ of 16.4 million fingerprints:
 
+    (py27)glandrum@Otter:~/RDKit_blog/data$ simsearch -t 0.4 -q chembl_random_10.fpb --times -k all -c zinc_all_clean.fpb 
+    #Count/1
+    #num_bits=2048
+    #type=Count threshold=0.4
+    #software=chemfp/2.1
+    #queries=chembl_random_10.fpb
+    #targets=zinc_all_clean.fpb
+    #query_sources=chembl_random_10.smi
+    #target_sources=/scratch/RDKit_git/Data/Zinc/zinc_all_clean.smi.gz
+    92	552129
+    6675	1109930
+    116	623138
+    19890	1034319
+    5142	766599
+    679	1067143
+    131	1116827
+    1463	783512
+    0	357411
+    14	244180
+    open 0.00 search 1.31 total 1.31
+    (py27)glandrum@Otter:~/RDKit_blog/data$ simsearch -t 0.9 -q chembl_random_10.fpb --times -k all -c zinc_all_clean.fpb 
+    #Count/1
+    #num_bits=2048
+    #type=Count threshold=0.9
+    #software=chemfp/2.1
+    #queries=chembl_random_10.fpb
+    #targets=zinc_all_clean.fpb
+    #query_sources=chembl_random_10.smi
+    #target_sources=/scratch/RDKit_git/Data/Zinc/zinc_all_clean.smi.gz
+    0	552129
+    1	1109930
+    0	623138
+    4	1034319
+    2	766599
+    0	1067143
+    0	1116827
+    1	783512
+    0	357411
+    0	244180
+    open 0.00 search 0.58 total 0.58
+    (py27)glandrum@Otter:~/RDKit_blog/data$ simsearch -t 0.95 -q chembl_random_10.fpb --times -k all -c zinc_all_clean.fpb 
+    #Count/1
+    #num_bits=2048
+    #type=Count threshold=0.95
+    #software=chemfp/2.1
+    #queries=chembl_random_10.fpb
+    #targets=zinc_all_clean.fpb
+    #query_sources=chembl_random_10.smi
+    #target_sources=/scratch/RDKit_git/Data/Zinc/zinc_all_clean.smi.gz
+    0	552129
+    1	1109930
+    0	623138
+    2	1034319
+    2	766599
+    0	1067143
+    0	1116827
+    1	783512
+    0	357411
+    0	244180
+    open 0.00 search 0.41 total 0.41
+    (py27)glandrum@Otter:~/RDKit_blog/data$ simsearch -t 0.99 -q chembl_random_10.fpb --times -k all -c zinc_all_clean.fpb 
+    #Count/1
+    #num_bits=2048
+    #type=Count threshold=0.99
+    #software=chemfp/2.1
+    #queries=chembl_random_10.fpb
+    #targets=zinc_all_clean.fpb
+    #query_sources=chembl_random_10.smi
+    #target_sources=/scratch/RDKit_git/Data/Zinc/zinc_all_clean.smi.gz
+    0	552129
+    1	1109930
+    0	623138
+    2	1034319
+    2	766599
+    0	1067143
+    0	1116827
+    1	783512
+    0	357411
+    0	244180
+    open 0.00 search 0.22 total 0.22
 
+Great stuff!
