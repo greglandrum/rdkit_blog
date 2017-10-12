@@ -51,6 +51,8 @@ As you traverse the columns you calculate and record the distances if they have 
 the distances is key to the efficiency of the algorithm. A distance is only calculated if it is needed, and it is never calculated twice.
 This is the aspect that Roger spotted was not implemented in the old version, and he improved as described in his talk.
 
+** TODO - Please review my description of the algorithm **
+
 So what does this all mean? Roger's new version will be present in the 2017_09_01 version of RDKit (now released), and the tests we 
 show here use a beta version of this, and compare timings against the 2017_03_03 version that had the old implementation that performs
 many more unnecessary distance calculations. 
@@ -117,13 +119,15 @@ The Jupyter notebook shows how this can be done. Timings are as follows:
 
     Picks | Time
 	    1 |    8.4    8.5    8.7
-		2 |  137    133    128
-		3 |  222    218    223
+	    2 |  137    133    128
+	    3 |  222    218    223
 	   10 | 1029   1006   1030
 	  100 | 1201   1181   1199
 	 1000 | 1256   1187   1245
 
 Impressive. Large scale compound selection done of a modest laptop in a few minutes. 
+
+** TODO - I don't understand these timings **
 
 Are there no limits? Well, for very large sets holding all the fingerprints and picking data in memory will become limiting, and 
 generating the descriptors in the first place will take time.
