@@ -51,8 +51,6 @@ As you traverse the columns you calculate and record the distances if they have 
 the distances is key to the efficiency of the algorithm. A distance is only calculated if it is needed, and it is never calculated twice.
 This is the aspect that Roger spotted was not implemented in the old version, and he improved as described in his talk.
 
-** TODO - Please review my description of the algorithm **
-
 So what does this all mean? Roger's new version will be present in the 2017_09_01 version of RDKit (now released), and the tests we 
 show here use a beta version of this, and compare timings against the 2017_03_03 version that had the old implementation that performs
 many more unnecessary distance calculations. 
@@ -111,13 +109,13 @@ Large studies that are impractical with the old algorithm now run in seconds.
 
 So how can this be used for some more realistically scaled studies? Compound collections will often be in the order of several 100,000's,
 and those for Pharma companies in the range of a few million. Vendor catalogs that can be picked from can often be in the range of 100,000 
-compounds. So we set up an study that tried to reflect this sort of scale. We chose the NCI250 dataset (comprising 247,477 smiles that 
+compounds. So we set up an study that tried to approach this sort of scale. We chose the NCI250 dataset (comprising 247,477 smiles that 
 RDKit can handle) as the compounds that we already possess, and pick from the benzodiazepine set of 12386 compounds.
 This can realistically only be done with the new algorithm.
 
 The Jupyter notebook shows how this can be done. Timings are as follows:
 
-    Picks | Time
+    Picks | Time (sec)
 	    1 |    8.4    8.5    8.7
 	    2 |  137    133    128
 	    3 |  222    218    223
@@ -125,9 +123,7 @@ The Jupyter notebook shows how this can be done. Timings are as follows:
 	  100 | 1201   1181   1199
 	 1000 | 1256   1187   1245
 
-Impressive. Large scale compound selection done of a modest laptop in a few minutes. 
-
-** TODO - I don't understand these timings **
+Impressive. Large scale compound selection done of a modest laptop in minutes. 
 
 Are there no limits? Well, for very large sets holding all the fingerprints and picking data in memory will become limiting, and 
 generating the descriptors in the first place will take time.
