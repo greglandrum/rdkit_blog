@@ -1,0 +1,38 @@
+sources:
+  activities:
+    args:
+      csv_kwargs:
+        sep: ' '
+      urlpath: ../data/herg_data.txt
+    description: 'measured values from ChEMBL'
+    driver: intake.source.csv.CSVSource
+    metadata: {}
+  props:
+    args:
+      urlpath: ../data/herg_mols_props.csv
+    description: 'calculated values'
+    driver: intake.source.csv.CSVSource
+    metadata:
+        plots:
+          logp_mw:
+            kind: scatter
+            x: MolWt
+            y: MolLogP
+            width: 700
+            height: 400
+  sdf3d:
+    args:
+      filename: ../data/herg_3dmols.sdf
+      nPartitions: 4
+      removeHs: false
+    description: '3D structures and descriptors of the compounds'
+    driver: intake_sdf.SDFSource
+    metadata:
+      removeHs: true
+      plots:
+        shape:
+           kind: scatter
+           x: asphericity
+           y: NPR1
+           width: 700
+           height: 400
