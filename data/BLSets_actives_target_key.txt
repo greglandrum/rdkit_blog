@@ -1,0 +1,36 @@
+tid	chembl_id	pref_name	organism
+8	CHEMBL1862	Tyrosine-protein kinase ABL	Homo sapiens
+11	CHEMBL204	Thrombin	Homo sapiens
+15	CHEMBL205	Carbonic anhydrase II	Homo sapiens
+10260	CHEMBL4794	Vanilloid receptor	Homo sapiens
+10280	CHEMBL264	Histamine H3 receptor	Homo sapiens
+51	CHEMBL214	Serotonin 1a (5-HT1a) receptor	Homo sapiens
+72	CHEMBL217	Dopamine D2 receptor	Homo sapiens
+10841	CHEMBL4552	Peripheral-type benzodiazepine receptor	Rattus norvegicus
+10839	CHEMBL2147	Serine/threonine-protein kinase PIM1	Homo sapiens
+107	CHEMBL224	Serotonin 2a (5-HT2a) receptor	Homo sapiens
+125	CHEMBL229	Alpha-1a adrenergic receptor	Homo sapiens
+129	CHEMBL233	Mu opioid receptor	Homo sapiens
+130	CHEMBL234	Dopamine D3 receptor	Homo sapiens
+136	CHEMBL236	Delta opioid receptor	Homo sapiens
+137	CHEMBL237	Kappa opioid receptor	Homo sapiens
+106661	CHEMBL2366517	Protease	Human immunodeficiency virus 1
+100010	CHEMBL4409	Phosphodiesterase 10A	Homo sapiens
+10919	CHEMBL2835	Tyrosine-protein kinase JAK1	Homo sapiens
+10938	CHEMBL2971	Tyrosine-protein kinase JAK2	Homo sapiens
+17084	CHEMBL3952	Kappa opioid receptor	Cavia porcellus
+191	CHEMBL243	Human immunodeficiency virus type 1 protease	Human immunodeficiency virus 1
+194	CHEMBL244	Coagulation factor X	Homo sapiens
+14037	CHEMBL339	Dopamine D2 receptor	Rattus norvegicus
+219	CHEMBL245	Muscarinic acetylcholine receptor M3	Homo sapiens
+252	CHEMBL251	Adenosine A2a receptor	Homo sapiens
+259	CHEMBL253	Cannabinoid CB2 receptor	Homo sapiens
+280	CHEMBL256	Adenosine A3 receptor	Homo sapiens
+10526	CHEMBL269	Delta opioid receptor	Rattus norvegicus
+10529	CHEMBL270	Mu opioid receptor	Rattus norvegicus
+11085	CHEMBL1946	Melatonin receptor 1B	Homo sapiens
+10576	CHEMBL273	Serotonin 1a (5-HT1a) receptor	Rattus norvegicus
+104290	CHEMBL1907596	Neuronal acetylcholine receptor; alpha4/beta2	Rattus norvegicus
+10627	CHEMBL3371	Serotonin 6 (5-HT6) receptor	Homo sapiens
+12198	CHEMBL313	Serotonin transporter	Rattus norvegicus
+100304	CHEMBL4860	Apoptosis regulator Bcl-2	Homo sapiens
