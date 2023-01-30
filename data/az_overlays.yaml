@@ -1,0 +1,1467 @@
+metadata:
+  version: 1
+  creator: 
+    name: greg landrum
+    email: glandrum@ethz.ch
+
+  summary: |
+    Collections of aligned PDB ligands from the JCIM article by Giangreco et al.
+    An Extensive and Diverse Set of Molecular Overlays for the Validation of Pharmacophore Programs
+    JCIM 4:852-856 (2013) https://doi.org/10.1021/ci400020a
+    
+  metdata:
+    paper_url: https://doi.org/10.1021/ci400020a
+    paper title: An Extensive and Diverse Set of Molecular Overlays for the Validation of Pharmacophore Programs
+
+sources:
+    P49841:
+      description: aligned ligands from GSK3B_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P49841.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: GSK3B_HUMAN
+        protein_uniprot_accession: P49841
+        protein_uniprot_nm: Glycogen synthase kinase-3 beta
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P49841/entry
+        num_compounds: 13
+    
+    P00749:
+      description: aligned ligands from UROK_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00749.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: UROK_HUMAN
+        protein_uniprot_accession: P00749
+        protein_uniprot_nm: Urokinase-type plasminogen activator
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00749/entry
+        num_compounds: 27
+    
+    P00374:
+      description: aligned ligands from DYR_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00374.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DYR_HUMAN
+        protein_uniprot_accession: P00374
+        protein_uniprot_nm: Dihydrofolate reductase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00374/entry
+        num_compounds: 15
+    
+    P08069:
+      description: aligned ligands from IGF1R_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P08069.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: IGF1R_HUMAN
+        protein_uniprot_accession: P08069
+        protein_uniprot_nm: Insulin-like growth factor 1 receptor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P08069/entry
+        num_compounds: 8
+    
+    P24627:
+      description: aligned ligands from TRFL_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P24627.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: TRFL_BOVIN
+        protein_uniprot_accession: P24627
+        protein_uniprot_nm: Lactotransferrin
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P24627/entry
+        num_compounds: 12
+    
+    P08235:
+      description: aligned ligands from MCR_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P08235.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MCR_HUMAN
+        protein_uniprot_accession: P08235
+        protein_uniprot_nm: Mineralocorticoid receptor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P08235/entry
+        num_compounds: 7
+    
+    P42574:
+      description: aligned ligands from CASP3_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P42574.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CASP3_HUMAN
+        protein_uniprot_accession: P42574
+        protein_uniprot_nm: Caspase-3
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P42574/entry
+        num_compounds: 7
+    
+    P48736:
+      description: aligned ligands from PK3CG_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P48736.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PK3CG_HUMAN
+        protein_uniprot_accession: P48736
+        protein_uniprot_nm: Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma isoform
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P48736/entry
+        num_compounds: 5
+    
+    P06401:
+      description: aligned ligands from PRGR_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P06401.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PRGR_HUMAN
+        protein_uniprot_accession: P06401
+        protein_uniprot_nm: Progesterone receptor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P06401/entry
+        num_compounds: 9
+    
+    P78536:
+      description: aligned ligands from ADA17_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P78536.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ADA17_HUMAN
+        protein_uniprot_accession: P78536
+        protein_uniprot_nm: Disintegrin and metalloproteinase domain-containing protein 17
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P78536/entry
+        num_compounds: 15
+    
+    P09960:
+      description: aligned ligands from LKHA4_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P09960.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: LKHA4_HUMAN
+        protein_uniprot_accession: P09960
+        protein_uniprot_nm: Leukotriene A-4 hydrolase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P09960/entry
+        num_compounds: 19
+    
+    A9JQL9:
+      description: aligned ligands from CRTM_STAAU
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/A9JQL9.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CRTM_STAAU
+        protein_uniprot_accession: A9JQL9
+        protein_uniprot_nm: 4,4'-diapophytoene synthase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/A9JQL9/entry
+        num_compounds: 6
+    
+    P08709:
+      description: aligned ligands from FA7_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P08709.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: FA7_HUMAN
+        protein_uniprot_accession: P08709
+        protein_uniprot_nm: Coagulation factor VII
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P08709/entry
+        num_compounds: 5
+    
+    P22906:
+      description: aligned ligands from DYR_CANAX
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P22906.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DYR_CANAX
+        protein_uniprot_accession: P22906
+        protein_uniprot_nm: Dihydrofolate reductase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P22906/entry
+        num_compounds: 8
+    
+    P00929:
+      description: aligned ligands from TRPA_SALTY
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00929.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: TRPA_SALTY
+        protein_uniprot_accession: P00929
+        protein_uniprot_nm: Tryptophan synthase alpha chain
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00929/entry
+        num_compounds: 9
+    
+    P11838:
+      description: aligned ligands from CARP_CRYPA
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P11838.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CARP_CRYPA
+        protein_uniprot_accession: P11838
+        protein_uniprot_nm: Endothiapepsin
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P11838/entry
+        num_compounds: 11
+    
+    Q07343:
+      description: aligned ligands from PDE4B_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q07343.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDE4B_HUMAN
+        protein_uniprot_accession: Q07343
+        protein_uniprot_nm: cAMP-specific 3',5'-cyclic phosphodiesterase 4B
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q07343/entry
+        num_compounds: 14
+    
+    Q581W1:
+      description: aligned ligands from Q581W1_TRYB2
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q581W1.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: Q581W1_TRYB2
+        protein_uniprot_accession: Q581W1
+        protein_uniprot_nm: Pteridine reductase, putative
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q581W1/entry
+        num_compounds: 9
+    
+    P02829:
+      description: aligned ligands from HSP82_YEAST
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P02829.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: HSP82_YEAST
+        protein_uniprot_accession: P02829
+        protein_uniprot_nm: ATP-dependent molecular chaperone HSP82
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P02829/entry
+        num_compounds: 11
+    
+    P11309:
+      description: aligned ligands from PIM1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P11309.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PIM1_HUMAN
+        protein_uniprot_accession: P11309
+        protein_uniprot_nm: Serine/threonine-protein kinase pim-1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P11309/entry
+        num_compounds: 31
+    
+    P00772:
+      description: aligned ligands from CELA1_PIG
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00772.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CELA1_PIG
+        protein_uniprot_accession: P00772
+        protein_uniprot_nm: Chymotrypsin-like elastase family member 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00772/entry
+        num_compounds: 5
+    
+    P06239:
+      description: aligned ligands from LCK_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P06239.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: LCK_HUMAN
+        protein_uniprot_accession: P06239
+        protein_uniprot_nm: Tyrosine-protein kinase Lck
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P06239/entry
+        num_compounds: 10
+    
+    Q13526:
+      description: aligned ligands from PIN1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q13526.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PIN1_HUMAN
+        protein_uniprot_accession: Q13526
+        protein_uniprot_nm: Peptidyl-prolyl cis-trans isomerase NIMA-interacting 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q13526/entry
+        num_compounds: 23
+    
+    P14174:
+      description: aligned ligands from MIF_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P14174.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MIF_HUMAN
+        protein_uniprot_accession: P14174
+        protein_uniprot_nm: Macrophage migration inhibitory factor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P14174/entry
+        num_compounds: 16
+    
+    Q04771:
+      description: aligned ligands from ACVR1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q04771.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ACVR1_HUMAN
+        protein_uniprot_accession: Q04771
+        protein_uniprot_nm: Activin receptor type-1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q04771/entry
+        num_compounds: 5
+    
+    O60885:
+      description: aligned ligands from BRD4_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O60885.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BRD4_HUMAN
+        protein_uniprot_accession: O60885
+        protein_uniprot_nm: Bromodomain-containing protein 4
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O60885/entry
+        num_compounds: 10
+    
+    P00517:
+      description: aligned ligands from KAPCA_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00517.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: KAPCA_BOVIN
+        protein_uniprot_accession: P00517
+        protein_uniprot_nm: cAMP-dependent protein kinase catalytic subunit alpha
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00517/entry
+        num_compounds: 21
+    
+    P09467:
+      description: aligned ligands from F16P1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P09467.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: F16P1_HUMAN
+        protein_uniprot_accession: P09467
+        protein_uniprot_nm: Fructose-1,6-bisphosphatase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P09467/entry
+        num_compounds: 6
+    
+    P43235:
+      description: aligned ligands from CATK_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P43235.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CATK_HUMAN
+        protein_uniprot_accession: P43235
+        protein_uniprot_nm: Cathepsin K
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P43235/entry
+        num_compounds: 12
+    
+    P25779:
+      description: aligned ligands from CYSP_TRYCR
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P25779.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CYSP_TRYCR
+        protein_uniprot_accession: P25779
+        protein_uniprot_nm: Cruzipain
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P25779/entry
+        num_compounds: 7
+    
+    Q9BZP6:
+      description: aligned ligands from CHIA_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q9BZP6.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CHIA_HUMAN
+        protein_uniprot_accession: Q9BZP6
+        protein_uniprot_nm: Acidic mammalian chitinase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q9BZP6/entry
+        num_compounds: 5
+    
+    O60674:
+      description: aligned ligands from JAK2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O60674.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: JAK2_HUMAN
+        protein_uniprot_accession: O60674
+        protein_uniprot_nm: Tyrosine-protein kinase JAK2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O60674/entry
+        num_compounds: 13
+    
+    P04035:
+      description: aligned ligands from HMDH_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P04035.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: HMDH_HUMAN
+        protein_uniprot_accession: P04035
+        protein_uniprot_nm: 3-hydroxy-3-methylglutaryl-coenzyme A reductase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P04035/entry
+        num_compounds: 7
+    
+    Q16539:
+      description: aligned ligands from MK14_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q16539.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MK14_HUMAN
+        protein_uniprot_accession: Q16539
+        protein_uniprot_nm: Mitogen-activated protein kinase 14
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q16539/entry
+        num_compounds: 26
+    
+    P35968:
+      description: aligned ligands from VGFR2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P35968.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: VGFR2_HUMAN
+        protein_uniprot_accession: P35968
+        protein_uniprot_nm: Vascular endothelial growth factor receptor 2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P35968/entry
+        num_compounds: 8
+    
+    O15530:
+      description: aligned ligands from PDPK1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O15530.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDPK1_HUMAN
+        protein_uniprot_accession: O15530
+        protein_uniprot_nm: 3-phosphoinositide-dependent protein kinase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O15530/entry
+        num_compounds: 14
+    
+    P00520:
+      description: aligned ligands from ABL1_MOUSE
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00520.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ABL1_MOUSE
+        protein_uniprot_accession: P00520
+        protein_uniprot_nm: Tyrosine-protein kinase ABL1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00520/entry
+        num_compounds: 5
+    
+    P11509:
+      description: aligned ligands from CP2A6_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P11509.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CP2A6_HUMAN
+        protein_uniprot_accession: P11509
+        protein_uniprot_nm: Cytochrome P450 2A6
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P11509/entry
+        num_compounds: 6
+    
+    P0AE18:
+      description: aligned ligands from MAP1_ECOLI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P0AE18.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MAP1_ECOLI
+        protein_uniprot_accession: P0AE18
+        protein_uniprot_nm: Methionine aminopeptidase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P0AE18/entry
+        num_compounds: 21
+    
+    P00730:
+      description: aligned ligands from CBPA1_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00730.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CBPA1_BOVIN
+        protein_uniprot_accession: P00730
+        protein_uniprot_nm: Carboxypeptidase A1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00730/entry
+        num_compounds: 8
+    
+    P25440:
+      description: aligned ligands from BRD2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P25440.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BRD2_HUMAN
+        protein_uniprot_accession: P25440
+        protein_uniprot_nm: Bromodomain-containing protein 2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P25440/entry
+        num_compounds: 11
+    
+    P59071:
+      description: aligned ligands from PA2B8_DABRR
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P59071.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PA2B8_DABRR
+        protein_uniprot_accession: P59071
+        protein_uniprot_nm: Basic phospholipase A2 VRV-PL-VIIIa
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P59071/entry
+        num_compounds: 16
+    
+    P30291:
+      description: aligned ligands from WEE1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P30291.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: WEE1_HUMAN
+        protein_uniprot_accession: P30291
+        protein_uniprot_nm: Wee1-like protein kinase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P30291/entry
+        num_compounds: 7
+    
+    P28523:
+      description: aligned ligands from CSK2A_MAIZE
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P28523.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CSK2A_MAIZE
+        protein_uniprot_accession: P28523
+        protein_uniprot_nm: Casein kinase II subunit alpha
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P28523/entry
+        num_compounds: 19
+    
+    O14757:
+      description: aligned ligands from CHK1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O14757.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CHK1_HUMAN
+        protein_uniprot_accession: O14757
+        protein_uniprot_nm: Serine/threonine-protein kinase Chk1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O14757/entry
+        num_compounds: 35
+    
+    Q10714:
+      description: aligned ligands from ACE_DROME
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q10714.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ACE_DROME
+        protein_uniprot_accession: Q10714
+        protein_uniprot_nm: Angiotensin-converting enzyme
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q10714/entry
+        num_compounds: 6
+    
+    P15121:
+      description: aligned ligands from ALDR_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P15121.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ALDR_HUMAN
+        protein_uniprot_accession: P15121
+        protein_uniprot_nm: Aldo-keto reductase family 1 member B1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P15121/entry
+        num_compounds: 27
+    
+    P45452:
+      description: aligned ligands from MMP13_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P45452.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MMP13_HUMAN
+        protein_uniprot_accession: P45452
+        protein_uniprot_nm: Collagenase 3
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P45452/entry
+        num_compounds: 12
+    
+    P23470:
+      description: aligned ligands from PTPRG_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P23470.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PTPRG_HUMAN
+        protein_uniprot_accession: P23470
+        protein_uniprot_nm: Receptor-type tyrosine-protein phosphatase gamma
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P23470/entry
+        num_compounds: 5
+    
+    P14324:
+      description: aligned ligands from FPPS_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P14324.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: FPPS_HUMAN
+        protein_uniprot_accession: P14324
+        protein_uniprot_nm: Farnesyl pyrophosphate synthase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P14324/entry
+        num_compounds: 8
+    
+    O76074:
+      description: aligned ligands from PDE5A_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O76074.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDE5A_HUMAN
+        protein_uniprot_accession: O76074
+        protein_uniprot_nm: cGMP-specific 3',5'-cyclic phosphodiesterase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O76074/entry
+        num_compounds: 9
+    
+    P07688:
+      description: aligned ligands from CATB_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P07688.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CATB_BOVIN
+        protein_uniprot_accession: P07688
+        protein_uniprot_nm: Cathepsin B
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P07688/entry
+        num_compounds: 7
+    
+    P0A017:
+      description: aligned ligands from DYR_STAAU
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P0A017.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DYR_STAAU
+        protein_uniprot_accession: P0A017
+        protein_uniprot_nm: Dihydrofolate reductase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P0A017/entry
+        num_compounds: 11
+    
+    P56658:
+      description: aligned ligands from ADA_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P56658.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ADA_BOVIN
+        protein_uniprot_accession: P56658
+        protein_uniprot_nm: Adenosine deaminase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P56658/entry
+        num_compounds: 9
+    
+    P00918:
+      description: aligned ligands from CAH2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00918.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CAH2_HUMAN
+        protein_uniprot_accession: P00918
+        protein_uniprot_nm: Carbonic anhydrase 2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00918/entry
+        num_compounds: 23
+    
+    P68400:
+      description: aligned ligands from CSK21_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P68400.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CSK21_HUMAN
+        protein_uniprot_accession: P68400
+        protein_uniprot_nm: Casein kinase II subunit alpha
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P68400/entry
+        num_compounds: 14
+    
+    P18031:
+      description: aligned ligands from PTN1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P18031.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PTN1_HUMAN
+        protein_uniprot_accession: P18031
+        protein_uniprot_nm: Tyrosine-protein phosphatase non-receptor type 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P18031/entry
+        num_compounds: 30
+    
+    P51857:
+      description: aligned ligands from AK1D1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P51857.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: AK1D1_HUMAN
+        protein_uniprot_accession: P51857
+        protein_uniprot_nm: Aldo-keto reductase family 1 member D1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P51857/entry
+        num_compounds: 6
+    
+    P03372:
+      description: aligned ligands from ESR1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P03372.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ESR1_HUMAN
+        protein_uniprot_accession: P03372
+        protein_uniprot_nm: Estrogen receptor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P03372/entry
+        num_compounds: 27
+    
+    P15090:
+      description: aligned ligands from FABP4_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P15090.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: FABP4_HUMAN
+        protein_uniprot_accession: P15090
+        protein_uniprot_nm: Fatty acid-binding protein, adipocyte
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P15090/entry
+        num_compounds: 8
+    
+    Q3JRA0:
+      description: aligned ligands from ISPF_BURP1
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q3JRA0.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ISPF_BURP1
+        protein_uniprot_accession: Q3JRA0
+        protein_uniprot_nm: 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q3JRA0/entry
+        num_compounds: 4
+    
+    P28845:
+      description: aligned ligands from DHI1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P28845.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DHI1_HUMAN
+        protein_uniprot_accession: P28845
+        protein_uniprot_nm: 11-beta-hydroxysteroid dehydrogenase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P28845/entry
+        num_compounds: 9
+    
+    P51955:
+      description: aligned ligands from NEK2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P51955.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: NEK2_HUMAN
+        protein_uniprot_accession: P51955
+        protein_uniprot_nm: Serine/threonine-protein kinase Nek2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P51955/entry
+        num_compounds: 10
+    
+    P05326:
+      description: aligned ligands from IPNA_EMENI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P05326.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: IPNA_EMENI
+        protein_uniprot_accession: P05326
+        protein_uniprot_nm: Isopenicillin N synthase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P05326/entry
+        num_compounds: 9
+    
+    P08254:
+      description: aligned ligands from MMP3_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P08254.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MMP3_HUMAN
+        protein_uniprot_accession: P08254
+        protein_uniprot_nm: Stromelysin-1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P08254/entry
+        num_compounds: 9
+    
+    P0AD64:
+      description: aligned ligands from BLA1_KLEPN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P0AD64.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BLA1_KLEPN
+        protein_uniprot_accession: P0AD64
+        protein_uniprot_nm: Beta-lactamase SHV-1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P0AD64/entry
+        num_compounds: 6
+    
+    P04642:
+      description: aligned ligands from LDHA_RAT
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P04642.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: LDHA_RAT
+        protein_uniprot_accession: P04642
+        protein_uniprot_nm: L-lactate dehydrogenase A chain
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P04642/entry
+        num_compounds: 8
+    
+    P12758:
+      description: aligned ligands from UDP_ECOLI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P12758.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: UDP_ECOLI
+        protein_uniprot_accession: P12758
+        protein_uniprot_nm: Uridine phosphorylase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P12758/entry
+        num_compounds: 5
+    
+    P53779:
+      description: aligned ligands from MK10_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P53779.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MK10_HUMAN
+        protein_uniprot_accession: P53779
+        protein_uniprot_nm: Mitogen-activated protein kinase 10
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P53779/entry
+        num_compounds: 16
+    
+    Q00511:
+      description: aligned ligands from URIC_ASPFL
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q00511.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: URIC_ASPFL
+        protein_uniprot_accession: Q00511
+        protein_uniprot_nm: Uricase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q00511/entry
+        num_compounds: 7
+    
+    P00489:
+      description: aligned ligands from PYGM_RABIT
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00489.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PYGM_RABIT
+        protein_uniprot_accession: P00489
+        protein_uniprot_nm: Glycogen phosphorylase, muscle form
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00489/entry
+        num_compounds: 20
+    
+    P16184:
+      description: aligned ligands from DYR_PNECA
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P16184.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DYR_PNECA
+        protein_uniprot_accession: P16184
+        protein_uniprot_nm: Dihydrofolate reductase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P16184/entry
+        num_compounds: 7
+    
+    P54760:
+      description: aligned ligands from EPHB4_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P54760.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: EPHB4_HUMAN
+        protein_uniprot_accession: P54760
+        protein_uniprot_nm: Ephrin type-B receptor 4
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P54760/entry
+        num_compounds: 9
+    
+    P00760:
+      description: aligned ligands from TRY1_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00760.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: TRY1_BOVIN
+        protein_uniprot_accession: P00760
+        protein_uniprot_nm: Serine protease 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00760/entry
+        num_compounds: 22
+    
+    Q08499:
+      description: aligned ligands from PDE4D_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q08499.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDE4D_HUMAN
+        protein_uniprot_accession: Q08499
+        protein_uniprot_nm: cAMP-specific 3',5'-cyclic phosphodiesterase 4D
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q08499/entry
+        num_compounds: 14
+    
+    P24941:
+      description: aligned ligands from CDK2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P24941.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CDK2_HUMAN
+        protein_uniprot_accession: P24941
+        protein_uniprot_nm: Cyclin-dependent kinase 2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P24941/entry
+        num_compounds: 24
+    
+    Q9QYJ6:
+      description: aligned ligands from PDE10_RAT
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q9QYJ6.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDE10_RAT
+        protein_uniprot_accession: Q9QYJ6
+        protein_uniprot_nm: cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q9QYJ6/entry
+        num_compounds: 10
+    
+    P28482:
+      description: aligned ligands from MK01_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P28482.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MK01_HUMAN
+        protein_uniprot_accession: P28482
+        protein_uniprot_nm: Mitogen-activated protein kinase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P28482/entry
+        num_compounds: 7
+    
+    P39900:
+      description: aligned ligands from MMP12_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P39900.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MMP12_HUMAN
+        protein_uniprot_accession: P39900
+        protein_uniprot_nm: Macrophage metalloelastase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P39900/entry
+        num_compounds: 17
+    
+    P30405:
+      description: aligned ligands from PPIF_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P30405.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PPIF_HUMAN
+        protein_uniprot_accession: P30405
+        protein_uniprot_nm: Peptidyl-prolyl cis-trans isomerase F, mitochondrial
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P30405/entry
+        num_compounds: 5
+    
+    P14324_allosteric:
+      description: aligned ligands from FPPS_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P14324_allosteric.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: FPPS_HUMAN
+        protein_uniprot_accession: P14324_allosteric
+        protein_uniprot_nm: Farnesyl pyrophosphate synthase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P14324_allosteric/entry
+        num_compounds: 7
+    
+    Q92731:
+      description: aligned ligands from ESR2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q92731.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ESR2_HUMAN
+        protein_uniprot_accession: Q92731
+        protein_uniprot_nm: Estrogen receptor beta
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q92731/entry
+        num_compounds: 18
+    
+    P00734:
+      description: aligned ligands from THRB_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00734.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: THRB_HUMAN
+        protein_uniprot_accession: P00734
+        protein_uniprot_nm: Prothrombin
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00734/entry
+        num_compounds: 28
+    
+    Q9L5C8:
+      description: aligned ligands from Q9L5C8_ECOLX
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q9L5C8.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: Q9L5C8_ECOLX
+        protein_uniprot_accession: Q9L5C8
+        protein_uniprot_nm: Beta-lactamase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q9L5C8/entry
+        num_compounds: 14
+    
+    P42330:
+      description: aligned ligands from AK1C3_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P42330.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: AK1C3_HUMAN
+        protein_uniprot_accession: P42330
+        protein_uniprot_nm: Aldo-keto reductase family 1 member C3
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P42330/entry
+        num_compounds: 10
+    
+    P00808:
+      description: aligned ligands from BLAC_BACLI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00808.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BLAC_BACLI
+        protein_uniprot_accession: P00808
+        protein_uniprot_nm: Beta-lactamase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00808/entry
+        num_compounds: 8
+    
+    P24182:
+      description: aligned ligands from ACCC_ECOLI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P24182.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ACCC_ECOLI
+        protein_uniprot_accession: P24182
+        protein_uniprot_nm: Biotin carboxylase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P24182/entry
+        num_compounds: 12
+    
+    P47811:
+      description: aligned ligands from MK14_MOUSE
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P47811.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MK14_MOUSE
+        protein_uniprot_accession: P47811
+        protein_uniprot_nm: Mitogen-activated protein kinase 14
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P47811/entry
+        num_compounds: 10
+    
+    P10275:
+      description: aligned ligands from ANDR_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P10275.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ANDR_HUMAN
+        protein_uniprot_accession: P10275
+        protein_uniprot_nm: Androgen receptor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P10275/entry
+        num_compounds: 11
+    
+    P00523:
+      description: aligned ligands from SRC_CHICK
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00523.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: SRC_CHICK
+        protein_uniprot_accession: P00523
+        protein_uniprot_nm: Proto-oncogene tyrosine-protein kinase Src
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00523/entry
+        num_compounds: 12
+    
+    P56817:
+      description: aligned ligands from BACE1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P56817.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BACE1_HUMAN
+        protein_uniprot_accession: P56817
+        protein_uniprot_nm: Beta-secretase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P56817/entry
+        num_compounds: 18
+    
+    Q9T0N8:
+      description: aligned ligands from CKX1_MAIZE
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q9T0N8.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CKX1_MAIZE
+        protein_uniprot_accession: Q9T0N8
+        protein_uniprot_nm: Cytokinin dehydrogenase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q9T0N8/entry
+        num_compounds: 8
+    
+    P0ABP9:
+      description: aligned ligands from DEOD_ECO57
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P0ABP9.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DEOD_ECO57
+        protein_uniprot_accession: P0ABP9
+        protein_uniprot_nm: Purine nucleoside phosphorylase DeoD-type
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P0ABP9/entry
+        num_compounds: 8
+    
+    P36897:
+      description: aligned ligands from TGFR1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P36897.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: TGFR1_HUMAN
+        protein_uniprot_accession: P36897
+        protein_uniprot_nm: TGF-beta receptor type-1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P36897/entry
+        num_compounds: 5
+    
+    O76290:
+      description: aligned ligands from O76290_TRYBB
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O76290.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: O76290_TRYBB
+        protein_uniprot_accession: O76290
+        protein_uniprot_nm: Pteridine reductase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O76290/entry
+        num_compounds: 8
+    
+    P27487:
+      description: aligned ligands from DPP4_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P27487.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: DPP4_HUMAN
+        protein_uniprot_accession: P27487
+        protein_uniprot_nm: Dipeptidyl peptidase 4
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P27487/entry
+        num_compounds: 38
+    
+    O14965:
+      description: aligned ligands from AURKA_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O14965.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: AURKA_HUMAN
+        protein_uniprot_accession: O14965
+        protein_uniprot_nm: Aurora kinase A
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O14965/entry
+        num_compounds: 11
+    
+    P08581:
+      description: aligned ligands from MET_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P08581.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MET_HUMAN
+        protein_uniprot_accession: P08581
+        protein_uniprot_nm: Hepatocyte growth factor receptor
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P08581/entry
+        num_compounds: 13
+    
+    P00797:
+      description: aligned ligands from RENI_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00797.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: RENI_HUMAN
+        protein_uniprot_accession: P00797
+        protein_uniprot_nm: Renin
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00797/entry
+        num_compounds: 5
+    
+    P00742:
+      description: aligned ligands from FA10_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00742.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: FA10_HUMAN
+        protein_uniprot_accession: P00742
+        protein_uniprot_nm: Coagulation factor X
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00742/entry
+        num_compounds: 37
+    
+    P04058:
+      description: aligned ligands from ACES_TETCF
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P04058.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ACES_TETCF
+        protein_uniprot_accession: P04058
+        protein_uniprot_nm: Acetylcholinesterase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P04058/entry
+        num_compounds: 8
+    
+    P17612:
+      description: aligned ligands from KAPCA_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P17612.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: KAPCA_HUMAN
+        protein_uniprot_accession: P17612
+        protein_uniprot_nm: cAMP-dependent protein kinase catalytic subunit alpha
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P17612/entry
+        num_compounds: 13
+    
+    Q9BJF5:
+      description: aligned ligands from Q9BJF5_TOXGO
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q9BJF5.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: Q9BJF5_TOXGO
+        protein_uniprot_accession: Q9BJF5
+        protein_uniprot_nm: Calmodulin-domain protein kinase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q9BJF5/entry
+        num_compounds: 12
+    
+    P07900:
+      description: aligned ligands from HS90A_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P07900.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: HS90A_HUMAN
+        protein_uniprot_accession: P07900
+        protein_uniprot_nm: Heat shock protein HSP 90-alpha
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P07900/entry
+        num_compounds: 23
+    
+    P09955:
+      description: aligned ligands from CBPB1_PIG
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P09955.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CBPB1_PIG
+        protein_uniprot_accession: P09955
+        protein_uniprot_nm: Carboxypeptidase B
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P09955/entry
+        num_compounds: 8
+    
+    P00469:
+      description: aligned ligands from TYSY_LACCA
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00469.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: TYSY_LACCA
+        protein_uniprot_accession: P00469
+        protein_uniprot_nm: Thymidylate synthase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00469/entry
+        num_compounds: 5
+    
+    P00811:
+      description: aligned ligands from AMPC_ECOLI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00811.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: AMPC_ECOLI
+        protein_uniprot_accession: P00811
+        protein_uniprot_nm: Beta-lactamase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00811/entry
+        num_compounds: 22
+    
+    P00509:
+      description: aligned ligands from AAT_ECOLI
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P00509.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: AAT_ECOLI
+        protein_uniprot_accession: P00509
+        protein_uniprot_nm: Aspartate aminotransferase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P00509/entry
+        num_compounds: 6
+    
+    P50579:
+      description: aligned ligands from MAP2_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P50579.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MAP2_HUMAN
+        protein_uniprot_accession: P50579
+        protein_uniprot_nm: Methionine aminopeptidase 2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P50579/entry
+        num_compounds: 9
+    
+    P35557:
+      description: aligned ligands from HXK4_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P35557.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: HXK4_HUMAN
+        protein_uniprot_accession: P35557
+        protein_uniprot_nm: Hexokinase-4
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P35557/entry
+        num_compounds: 7
+    
+    Q57834:
+      description: aligned ligands from SYY_METJA
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q57834.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: SYY_METJA
+        protein_uniprot_accession: Q57834
+        protein_uniprot_nm: Tyrosine--tRNA ligase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q57834/entry
+        num_compounds: 7
+    
+    P80457:
+      description: aligned ligands from XDH_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P80457.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: XDH_BOVIN
+        protein_uniprot_accession: P80457
+        protein_uniprot_nm: Xanthine dehydrogenase/oxidase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P80457/entry
+        num_compounds: 9
+    
+    P41148:
+      description: aligned ligands from ENPL_CANLF
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P41148.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: ENPL_CANLF
+        protein_uniprot_accession: P41148
+        protein_uniprot_nm: Endoplasmin
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P41148/entry
+        num_compounds: 8
+    
+    P52700:
+      description: aligned ligands from BLA1_STEMA
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P52700.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BLA1_STEMA
+        protein_uniprot_accession: P52700
+        protein_uniprot_nm: Metallo-beta-lactamase L1 type 3
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P52700/entry
+        num_compounds: 6
+    
+    P25774:
+      description: aligned ligands from CATS_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P25774.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: CATS_HUMAN
+        protein_uniprot_accession: P25774
+        protein_uniprot_nm: Cathepsin S
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P25774/entry
+        num_compounds: 14
+    
+    Q9Y233:
+      description: aligned ligands from PDE10_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q9Y233.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDE10_HUMAN
+        protein_uniprot_accession: Q9Y233
+        protein_uniprot_nm: cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q9Y233/entry
+        num_compounds: 9
+    
+    Q02127:
+      description: aligned ligands from PYRD_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/Q02127.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PYRD_HUMAN
+        protein_uniprot_accession: Q02127
+        protein_uniprot_nm: Dihydroorotate dehydrogenase (quinone), mitochondrial
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/Q02127/entry
+        num_compounds: 8
+    
+    O15530_allosteric:
+      description: aligned ligands from PDPK1_HUMAN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/O15530_allosteric.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: PDPK1_HUMAN
+        protein_uniprot_accession: O15530_allosteric
+        protein_uniprot_nm: 3-phosphoinositide-dependent protein kinase 1
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/O15530_allosteric/entry
+        num_compounds: 5
+    
+    P61823:
+      description: aligned ligands from RNAS1_BOVIN
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P61823.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: RNAS1_BOVIN
+        protein_uniprot_accession: P61823
+        protein_uniprot_nm: Ribonuclease pancreatic
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P61823/entry
+        num_compounds: 7
+    
+    P0C5C1:
+      description: aligned ligands from BLAC_MYCTO
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P0C5C1.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: BLAC_MYCTO
+        protein_uniprot_accession: P9WKD2
+        protein_uniprot_nm: Beta-lactamase
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P9WKD2/entry
+        num_compounds: 8
+    
+    P0A5J2:
+      description: aligned ligands from MAP12_MYCTO
+      args:
+        filename: '{{ CATALOG_DIR }}/AZ_overlays/P0A5J2.sdf.gz'
+      driver: intake_rdkit.sdf.SDFSource
+      metadata:
+        protein_uniprot_id: MAP12_MYCTO
+        protein_uniprot_accession: P9WK18
+        protein_uniprot_nm: Methionine aminopeptidase 2
+        protein_uniprot_url: https://www.uniprot.org/uniprotkb/P9WK18/entry
+        num_compounds: 6
