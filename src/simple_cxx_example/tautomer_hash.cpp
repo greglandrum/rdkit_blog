@@ -1,11 +1,10 @@
 //
-//  Copyright (C) 2021 Greg Landrum
+//  Copyright (C) 2021-2025 Greg Landrum
 //
 
 #include <GraphMol/FileParsers/MolSupplier.h>
 #include <GraphMol/MolHash/MolHash.h>
 #include <GraphMol/RDKitBase.h>
-#include <RDGeneral/RDLog.h>
 #include <algorithm>
 #include <boost/timer/timer.hpp>
 #include <iostream>
@@ -14,13 +13,17 @@
 using namespace RDKit;
 
 void readmols(std::string pathName, unsigned int maxToDo,
-              std::vector<RWMOL_SPTR> &mols) {
+              std::vector<std::unique_ptr<RWMol>> &mols) {
   boost::timer::auto_cpu_timer t;
   // using a supplier without sanitizing the molecules...
-  RDKit::SmilesMolSupplier suppl(pathName, " \t", 1, 0, true, false);
+  v2::FileParsers::SmilesMolSupplierParams params;
+  params.parseParameters.sanitize = false;
+  params.smilesColumn = 1;
+  params.nameColumn = 0;
+  v2::FileParsers::SmilesMolSupplier suppl(pathName, params);
   unsigned int nDone = 0;
   while (!suppl.atEnd() && (maxToDo <= 0 || nDone < maxToDo)) {
-    RDKit::ROMol *m = suppl.next();
+    auto m = suppl.next();
     if (!m) {
       continue;
     }
@@ -28,26 +31,23 @@ void readmols(std::string pathName, unsigned int maxToDo,
     // the tautomer hash code uses conjugation info
     MolOps::setConjugation(*m);
     nDone += 1;
-    mols.push_back(RWMOL_SPTR((RWMol *)m));
+    mols.push_back(std::move(m));
   }
-  std::cerr << "read: " << nDone << " mols." << std::endl;
+  std::cerr << "  read: " << nDone << " mols." << std::endl;
 }
 
-void generatehashes(const std::vector<RWMOL_SPTR> &mols) {
+void generatehashes(const std::vector<std::unique_ptr<RWMol>> &mols) {
   boost::timer::auto_cpu_timer t;
-  for (auto &mol : mols) {
+  for (const auto &mol : mols) {
     auto hash =
         MolHash::MolHash(mol.get(), MolHash::HashFunction::HetAtomTautomer);
   }
 }
 int main(int argc, char *argv[]) {
-  RDLog::InitLogs();
-  std::vector<RWMOL_SPTR> mols;
-  BOOST_LOG(rdInfoLog) << "read mols" << std::endl;
-
+  std::vector<std::unique_ptr<RWMol>> mols;
+  std::cerr << "reading molecules" << std::endl;
   readmols(argv[1], 10000, mols);
-  BOOST_LOG(rdInfoLog) << "generate hashes" << std::endl;
+  std::cerr << "generating hashes" << std::endl;
   generatehashes(mols);
-
-  BOOST_LOG(rdInfoLog) << "done " << std::endl;
+  std::cerr << "done" << std::endl;
 }
